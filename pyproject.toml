@@ -13,3 +13,36 @@ line-ending = "auto"
 [tool.ruff.lint]
 select = ["ALL"]
 ignore = ["ANN001", "ANN201", "ANN202", "B006", "BLE001", "E402", "PD901", "PLR0913", "S311", "T201"]
+
+[tool.poetry]
+name = "ml-school"
+version = "0.1.0"
+description = ""
+authors = ["yangrchen <yangrc.chen@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.12"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+matplotlib = "^3.8.4"
+comet-ml = "^3.41.0"
+scikit-learn = "^1.4.2"
+python-dotenv = "^1.0.1"
+ipytest = "^0.14.2"
+sagemaker = {extras = ["local"], version = "^2.219.0"}
+ruff = "^0.4.4"
+nbformat = "^5.10.4"
+nbdev = "^2.3.20"
+nbclient = "^0.10.0"
+ipykernel = "^6.29.4"
+flask = "^3.0.3"
+polars = "^0.20.25"
+pyarrow = "^16.0.0"
+tensorflow = "^2.16.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
